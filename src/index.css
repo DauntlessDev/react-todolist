@@ -5,13 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height:100%;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 
 header {
   padding: 5px;
@@ -38,17 +33,26 @@ header h2{
   color: white;
 }
 
+
+
+.allButFooter  {
+  min-height: calc(100vh - 30px);
+  padding-bottom: 40px;
+}
+
+
 footer {
+  
+  clear: both;
+  position: relative;
   padding: 5px;
   width: 100%;
-  height: min-content;
-  position: absolute;
-  bottom: 0px;
+  height: 30px;
+  margin-top: -30px;
   text-align: center;
   background-color: lightgray;
   align-items: center center;
 }
-
 
 .about{
   width: 100%;

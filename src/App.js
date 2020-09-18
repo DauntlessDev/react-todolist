@@ -6,15 +6,14 @@ import Home from './pages/Home';
 import About from './pages/About';
 function App() {
   return (
-    <div className="App">
-      <Header/>
-
-        <div>
-          {/* <Home/> */}
-          <About/>
-        </div>
-
-      <Footer/>
+    <div className="App" >
+      <div className="allButFooter">
+        {/* <Home/> */}
+        <Header />
+        <About />
+      </div>
+      
+      <Footer />
     </div>
   );
 }
