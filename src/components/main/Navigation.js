@@ -4,28 +4,33 @@ import { Link } from 'react-router-dom'
 function Navigation(props) {
     return (
         <div>
-            <div className='navigation'>
-                AppName
+            <div className='navmask'
+                onClick={props.closeMenu}>
             </div>
-            <ul>
-                <li>
-                    <Link
-                        to="/"
-                        className="nav-button"
-                        onClick={props.closeMenu}>
-                        Home
+            <div className='navigation'>
+                <ul>
+                    <li className='navbutton-first'>
+                        <h4>The Menu </h4>
+                    </li>
+                    <li>
+                        <Link
+                            to="/"
+                            className="navbutton"
+                            onClick={props.closeMenu}>
+                            Home
                     </Link>
-                </li>
+                    </li>
 
-                <li>
-                    <Link
-                        to="/about"
-                        className="nav-button"
-                        onClick={props.closeMenu}>
-                        About
+                    <li>
+                        <Link
+                            to="/about"
+                            className="navbutton"
+                            onClick={props.closeMenu}>
+                            About
                     </Link>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 
