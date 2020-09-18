@@ -11,3 +11,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+header {
+  padding: 5px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  background-color: lightseagreen;
+  align-items: center center;
+
+}
+header #navigation{
+  padding: 8px 20px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  float: right;
+  color: white;
+}
+header h2{
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  font-style: bold;
+  color: white;
+}
+
+footer {
+  padding: 5px;
+  width: 100%;
+  height: min-content;
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  background-color: lightgray;
+  align-items: center center;
+}
+
+
+.about{
+  width: 100%;
+}
+
+.about h3{  
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+}
