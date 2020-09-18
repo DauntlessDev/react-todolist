@@ -1,11 +1,33 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Navigation() {
+function Navigation(props) {
     return (
         <div>
-            Navigation
+            <div className='navigation'>
+                AppName
+            </div>
+            <ul>
+                <li>
+                    <Link
+                        to="/"
+                        className="nav-button"
+                        onClick={props.closeMenu}>
+                        Home
+                    </Link>
+                </li>
+
+                <li>
+                    <Link
+                        to="/about"
+                        className="nav-button"
+                        onClick={props.closeMenu}>
+                        About
+                    </Link>
+                </li>
+            </ul>
         </div>
     )
-}
 
+}
 export default Navigation

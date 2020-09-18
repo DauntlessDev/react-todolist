@@ -4,18 +4,31 @@ import Header from './components/main/Header'
 
 import Home from './pages/Home';
 import About from './pages/About';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+
+
+
 function App() {
   return (
-    <div className="App" >
-      <div className="allButFooter">
-        {/* <Home/> */}
-        <Header />
-        <About />
-      </div>
-      
-      <Footer />
+    <div>
+      <Router>
+        <div className="allButFooter">
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </div>
+
+        <Footer />
+      </Router>
     </div>
   );
 }
+
 
 export default App;
