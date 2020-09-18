@@ -4,7 +4,7 @@ import logo from '../images/dauntless.png'
 function About() {
     return (
         <div className='about'>
-            <img src={logo} alt='dauntless-logo' width='100%'/>
+            <img src={logo} alt='dauntless-logo' id='logo'/>
             <h3>This app is made by DauntlessDev for practicing purposes</h3>
         </div>
     )
