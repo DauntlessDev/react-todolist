@@ -94,7 +94,7 @@ footer {
   border-bottom:  1px solid lightgreen;  
   padding-bottom: 5px;
   text-align: center;
-  padding: 15px;
+  padding: 50px;
 
 
 }
@@ -103,6 +103,7 @@ footer {
   font-style: bold;
 }
 .navigation .navbutton{
+  padding-top: 3px;
   display: block;
   text-decoration: none;
   color: darkgreen;
@@ -114,10 +115,6 @@ footer {
 
 .navigation li{
   list-style: none;
-}
-
-.navigation .title{
-  /* display: block; */
 }
 
 .navmask{
