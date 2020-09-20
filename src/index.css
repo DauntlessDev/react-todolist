@@ -128,3 +128,22 @@ footer {
   width: 100%;
 
 }
+
+.home {
+  align-content: center;
+  text-align: center;
+}
+
+ .content{
+  background-color: lightgreen;
+  min-height: 500px;
+}
+
+
+.home li{
+  background: #6d3d6d;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}

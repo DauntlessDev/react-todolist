@@ -14,17 +14,22 @@ export function getTodo() {
         type: GET_TODO_ERROR,
         payload: error
     }
-} export function addTodo() {
+} export function addTodo(newText) {
     return {
-        type: ADD_TODO
+        type: ADD_TODO,
+        title: newText
     }
 }
-export function updateTodo() {
+export function updateTodo(id, newText) {
     return {
-        type: UPDATE_TODO
+        type: UPDATE_TODO,
+        id: id,
+        title: newText
+
     }
-} export function deleteTodo() {
+} export function deleteTodo(id) {
     return {
-        type: DELETE_TODO
+        type: DELETE_TODO,
+        id: id
     }
 }
