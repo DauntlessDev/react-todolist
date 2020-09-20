@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { addTodo, deleteTodo } from '../redux'
 
+import smiley from '../images/smiley.png'
+
 function Home() {
     const todolist = useSelector(state => state.home.todolist)
     const dispatch = useDispatch()
@@ -16,7 +18,7 @@ function Home() {
     }
     const TodoDetails = ({ todo }) => {
         return (
-            <li onClick={() => dispatch(deleteTodo(todo.id))}>
+            <li className='todoitem' onClick={() => dispatch(deleteTodo(todo.id))}>
                 <div className="title">{todo.title}</div>
             </li>
         );
@@ -27,24 +29,28 @@ function Home() {
     return (
         <div className="home">
 
-            {todolist.length ?
-                <div className="content">
-                    <div className="description"> You have {todolist.length} things to do</div>
+            <div className="content">
+                {todolist.length ?
+                    <div>
+                        <h5 className="description"> You have {todolist.length} things to do</h5>
 
-                    {todolist.map(todo => {
-                        return (<TodoDetails todo={todo} key={todo.id} />
-                        )
-                    })}
-                </div>
-                : <div className="empty">No things to to do, hello free time! :)</div>
-            }
+                        {todolist.map(todo => {
+                            return (<TodoDetails todo={todo} key={todo.id} />
+                            )
+                        })}
+                    </div>
+                    : <div>     <img src={smiley} alt='smiley' id='smiley' />
+                        <div className="empty">No things to to do, hello free time! :)</div>
+                    </div>
+                }
 
-            <form onSubmit={handleAddTodo}>
+            </div >
+            <form className='addform' onSubmit={handleAddTodo}>
                 <input type="text" placeholder=" todo" value={title} onChange={(e) => setTitle(e.target.value)} required />
 
                 <input type="submit" value="add" />
             </form>
-        </div>
+        </div >
     )
 }
 

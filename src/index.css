@@ -135,15 +135,41 @@ footer {
 }
 
  .content{
-  background-color: lightgreen;
-  min-height: 500px;
+  background-color: rgb(205, 225, 205);
+  min-height: 600px;
+  width: 100%;
+  padding-bottom: 5px;
+  align-content: center center;
+  align-items: center center;
 }
 
 
-.home li{
-  background: #6d3d6d;
+.home #smiley{
+  padding-top: 70px;
+  padding-bottom: 10px;
+  width: 40%;
+}
+
+.description{
+  padding: 15px;
+  padding-top: -15px;
+  font-weight: bold;
+  
+  background: darkgreen;
+  color: white;
+}
+
+.todoitem{
+  background: darkgreen;
+  color: white;
   border-radius: 4px;
   padding: 10px;
+  min-width: 100px;
   cursor: pointer;
-  margin: 10px 0;
+  margin: 1px 0;
+  list-style: none;
+
+}
+.addform{
+  padding-top: 10px;
 }

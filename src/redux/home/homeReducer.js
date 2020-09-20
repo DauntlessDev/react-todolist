@@ -1,4 +1,4 @@
-import { ADD_TODO, DELETE_TODO, GET_TODO, GET_TODO_ERROR, GET_TODO_SUCCESS, UPDATE_TODO } from './homeTypes'
+import { ADD_TODO, DELETE_TODO} from './homeTypes'
 import { v4 as uuidv4 } from 'uuid';
 
 const initialState = {
